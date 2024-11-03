@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+#openhours {
+  background-color: #734196;
+  text-align: center;
+  padding: 7px 0;
+  color: white;
+  font-size: smaller;
+}
+
+.background-video {
+  position: relaive;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+}
+
+.background-video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: contrast(0.8);
+  filter: brightness(0.8);
+}
+/* dentist pro and top links */
+.navsection {
+  position: absolute;
+  top: 60px;
+  left: 150px;
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  background-color: #eee;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.navsection h1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+  text-shadow: #000;
+}
+
+.homenav {
+  width: 50%;
+}
+
+.homenav a:link {
+  position: relative;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #9d9292;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  text-shadow: #000;
+}
+
+.homenav a:link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #734196;
+  transform: scaleX(0);
+  transition: 0.3s ease-in-out;
+}
+
+/* for home link */
+/* .homenav a:first-child {
+  position: relative;
+} */
+
+/* .homenav a:first-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #734196;
+} */
+
+.homenav a:hover::after {
+  transform: scaleX(1);
+}
+
+.homenav a:active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #734196;
+}
+
+/* checkup and appointment schedule  */
+.info {
+  position: absolute;
+  top: 180px;
+  left: 250px;
+  display: flex;
+  align-items: center;
+  gap: 250px;
+}
+
+#dent {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  /* margin-top: 70px; */
+  font-weight: 600;
+  line-height: 100%;
+  text-align: center;
+  text-shadow: #000;
+}
+
+.book {
+  width: 35%;
+  background-color: #734196;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  height: 420px;
+  padding: 40px;
+}
+
+/* styling appointment form */
+input[type="text"],
+input[type="email"] {
+  width: 100px;
+  margin: 20px 0;
+  padding: 5px;
+}
+
+input[type="tel"] {
+  margin-bottom: 20px;
+  width: 210px;
+  padding: 5px;
+}
+
+input[type="date"] {
+  width: 210px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  /* width: 90px; */
+  padding: 10px 25px;
+  /* text-align: center; */
+  border-radius: 4px;
+  border: none;
+  background-color: #ba1f1f;
+  color: #fff;
+}
+/* addition of logos at the bottom */
+.logo {
+  position: absolute;
+  width: 100%;
+  background-color: #00000077;
+  bottom: -155px;
+  display: flex;
+  /* left: 150px; */
+  /* gap: 50px; */
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+  padding: 5px 100px;
+}
+
+/* dental services (link 2) */
+.xrays {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #f6f5f5;
+  width: 450px;
+  height: 200px;
+  margin: 0 auto;
+}
+.xrays div {
+  font-size: 12px;
+}
+
+.xrays h3 {
+  color: #a257d7;
+  font-family: serif;
+}
+
+.dental {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 30px;
+  width: 900px;
+  margin: 50px auto;
+}
+
+/* about doctor */
+#About {
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 100px 0 0 180px;
+  width: 900px;
+  gap: 50px;
+}
+
+h4 {
+  color: #773ba1;
+  margin-bottom: 15px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+pre {
+  line-height: 20px;
+  font-family: serif;
+  color: #1f1e1e;
+}
+
+.contabout {
+  border: none;
+  padding: 8px 45px;
+  color: white;
+  background-color: #773ba1;
+}
+
+.contabout:hover {
+  cursor: pointer;
+}
+
+/* testimonials  */
+.janee {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: serif;
+}
+
+.ref {
+  background-color: #eee;
+  padding: 10px 20px;
+  height: 150px;
+  position: relative;
+  width: 400px;
+}
+
+.ref::before {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  background: url(quote.png) no-repeat center;
+  background-size: cover;
+  opacity: 0.1;
+  content: "";
+}
+
+.ref::after {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 30px 0 0;
+  border-color: #eeeeee transparent transparent transparent;
+  content: "";
+  z-index: 2;
+}
+
+#Test {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 30px;
+  margin-bottom: 300px;
+}
+
+/* add animation */
+#Test {
+  animation: moveItems 10s infinite;
+}
+
+@keyframes moveItems {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* contact us */
+#contact {
+  background-color: #eee;
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+#contact h4 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: blueviolet;
+}
+
+.contact {
+  background-color: #e2c9f8;
+  width: 25%;
+  height: 120px;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+}
+
+.contactt {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+p a:link {
+  color: #8846c2;
+}
